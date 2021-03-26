@@ -12,4 +12,8 @@ describe '#spell_check' do
   it "returns 'hello word' for correctly spelled input of 'hello word'" do
     expect(spell_check('hello word')).to eq('hello word')
   end
+
+  it "returns 'Hello' for correctly spelled input of 'Hello'" do
+    expect(spell_check('Hello')).to eq('Hello')
+  end
 end
