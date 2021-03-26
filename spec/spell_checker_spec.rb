@@ -8,4 +8,8 @@ describe '#spell_check' do
   it "returns '~worrd~' for incorrectly spelled input of 'worrd'" do
     expect(spell_check('worrd')).to eq('~worrd~')
   end
+
+  it "returns 'hello word' for correctly spelled input of 'hello word'" do
+    expect(spell_check('hello word')).to eq('hello word')
+  end
 end
