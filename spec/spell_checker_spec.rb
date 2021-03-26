@@ -20,4 +20,12 @@ describe '#spell_check' do
   it "returns highlighted words for given client input" do
     expect(spell_check("These words are spnelt correclty")).to eq("These words are ~spnelt~ ~correclty~")
   end
+
+  it "returns multiple spaces as present in input" do
+    expect(spell_check("hello  word")).to eq('hello word')
+  end
+
+  it "returns punctuation correctly" do
+    expect(spell_check("hello word.")).to eq('hello word.')
+  end
 end

@@ -18,3 +18,8 @@ spell_check('hello word') | 'hello word'
 spell_check('hello worrd') | 'hello ~worrd~'
 spell_check('Hello') | 'Hello'
 spell_check('hElKo') | '~hElKo~'
+
+Ignore multiple spaces. Return same number of spaces.
+
+spell_check('hello  word') | 'hello  word'
+spell_check('hello word.') | 'hello word.'
