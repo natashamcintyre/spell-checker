@@ -1,3 +1,9 @@
+DICTIONARY = ['word']
+
 def spell_check(string)
-  'word'
+  if DICTIONARY.include?(string)
+    'word'
+  else
+    "~#{string}~"
+  end
 end
