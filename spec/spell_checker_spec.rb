@@ -16,4 +16,8 @@ describe '#spell_check' do
   it "returns 'Hello' for correctly spelled input of 'Hello'" do
     expect(spell_check('Hello')).to eq('Hello')
   end
+
+  it "returns highlighted words for given client input" do
+    expect(spell_check("These words are spnelt correclty")).to eq("These words are ~spnelt~ ~correclty~")
+  end
 end

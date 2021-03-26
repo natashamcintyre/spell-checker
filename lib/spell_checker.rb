@@ -1,4 +1,4 @@
-DICTIONARY = ['word', 'hello']
+DICTIONARY = ['word', 'hello', 'these', 'words', 'are', 'spelt', 'correctly']
 
 def spell_check(string)
   words = string.split(' ')
